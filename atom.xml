@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://key-d.github.io/"/>
-  <updated>2020-06-11T03:46:02.077Z</updated>
+  <updated>2020-08-06T10:32:36.395Z</updated>
   <id>https://key-d.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js中操作对象属性点 . 和中括号 [] 的区别</title>
+    <link href="https://key-d.github.io/2020/08/06/js-zhong-cao-zuo-dui-xiang-shu-xing-dian-he-zhong-gua-hao-de-qu-bie/"/>
+    <id>https://key-d.github.io/2020/08/06/js-zhong-cao-zuo-dui-xiang-shu-xing-dian-he-zhong-gua-hao-de-qu-bie/</id>
+    <published>2020-08-06T10:32:36.000Z</published>
+    <updated>2020-08-06T10:32:36.395Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于JavaScript中this指向问题以及call apply bind方法</title>
+    <link href="https://key-d.github.io/2020/08/06/guan-yu-javascript-zhong-this-zhi-xiang-wen-ti-yi-ji-call-apply-bind-fang-fa/"/>
+    <id>https://key-d.github.io/2020/08/06/guan-yu-javascript-zhong-this-zhi-xiang-wen-ti-yi-ji-call-apply-bind-fang-fa/</id>
+    <published>2020-08-06T10:28:58.000Z</published>
+    <updated>2020-08-06T10:28:58.223Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>博客诞生庆祝篇</title>

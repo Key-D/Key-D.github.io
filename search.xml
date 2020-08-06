@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>js中操作对象属性点 . 和中括号 [] 的区别</title>
+      <link href="/2020/08/06/js-zhong-cao-zuo-dui-xiang-shu-xing-dian-he-zhong-gua-hao-de-qu-bie/"/>
+      <url>/2020/08/06/js-zhong-cao-zuo-dui-xiang-shu-xing-dian-he-zhong-gua-hao-de-qu-bie/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于JavaScript中this指向问题以及call apply bind方法</title>
+      <link href="/2020/08/06/guan-yu-javascript-zhong-this-zhi-xiang-wen-ti-yi-ji-call-apply-bind-fang-fa/"/>
+      <url>/2020/08/06/guan-yu-javascript-zhong-this-zhi-xiang-wen-ti-yi-ji-call-apply-bind-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客诞生庆祝篇</title>
       <link href="/2020/06/10/my-new-post/"/>
       <url>/2020/06/10/my-new-post/</url>
