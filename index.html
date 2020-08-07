@@ -170,6 +170,63 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/08/07/js-zhong-guan-yu-gou-zao-han-shu-yuan-xing-he-shi-li-dui-xiang/">js中关于构造函数、原型和实例对象</a>
+
+      <a href="/2020/08/07/js-zhong-guan-yu-gou-zao-han-shu-yuan-xing-he-shi-li-dui-xiang/" class="index-excerpt">
+        
+        
+          
+        
+        <div>前言关于这些天的面试，做了一个总结。感叹一下，感觉前端工作出身平凡好难找555，市面上很多公司最低门槛都是两三年经验起步，还是回到那句话，不给机会，哪来的经验。。。有人说，好的程序员都是项目喂出来的，但是也能理解，公司招聘员工，员工需要为公司创造生产力，不能立刻创造价值的，就被筛选下来。。这些天的面试，经常会被问到JS中原生的一些基础的东西，关于原型链、数组去重、this指向、闭包等等，这也也是大</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-08-07
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/08/07/guan-yu-js-de-yu-jie-xi-he-bian-liang-ti-sheng/">关于js的预解析和变量提升</a>
+
+      <a href="/2020/08/07/guan-yu-js-de-yu-jie-xi-he-bian-liang-ti-sheng/" class="index-excerpt">
+        
+        
+          
+        
+        <div>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-08-07
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
       <a class="index-header" href="/2020/08/07/js-zhong-huo-qu-yuan-su-kuan-gao-de-shu-xing-he-fang-fa/">js中获取元素宽高的属性和方法</a>
 
       <a href="/2020/08/07/js-zhong-huo-qu-yuan-su-kuan-gao-de-shu-xing-he-fang-fa/" class="index-excerpt">
@@ -368,6 +425,29 @@ Quick</div>
   
 
   
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"name","artist":"artist","url":"/songs/test.mp3","cover":"/img/cover.jpg"},{"name":"name","artist":"artist","url":"https://...url.mp3","cover":"https://...cover.jpg"}]
+    });
+  }
+</script>
+
+  
 
   
 
@@ -380,6 +460,30 @@ Quick</div>
         <span>Fluid</span></a>
     </div>
     
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
 
     
 
@@ -406,6 +510,8 @@ Quick</div>
   <script  src="/js/clipboard-use.js" ></script>
 
 
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
