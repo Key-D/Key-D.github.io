@@ -15,9 +15,9 @@
   
   <meta name="theme-color" content="#2f4154">
   <meta name="description" content="web前端学习分享">
-  <meta name="author" content="key_d">
-  <meta name="keywords" content="">
-  <title>js中关于构造函数、原型和实例对象 - key_d的前端之路</title>
+  <meta name="author" content="江山">
+  <meta name="keywords" content="html,css,javascript,vue">
+  <title>js中关于构造函数、原型和实例对象 - 江山前端花拳绣腿</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -47,7 +47,7 @@
 
 
   <script  src="/js/utils.js" ></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="key_d的前端之路" type="application/atom+xml">
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="江山前端花拳绣腿" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
@@ -206,7 +206,7 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>关于这些天的面试，做了一个总结。感叹一下，感觉前端工作出身平凡好难找5<del>5</del>5，市面上很多公司最低门槛都是两三年经验起步，还是回到那句话，<strong>不给机会，哪来的经验。。。</strong>有人说，好的程序员都是项目喂出来的，但是也能理解，公司招聘员工，员工需要为公司创造生产力，不能立刻创造价值的，就被筛选下来。。这些天的面试，经常会被问到JS中原生的一些基础的东西，关于原型链、数组去重、this指向、闭包等等，这也也是大多数前端面试被经常提及的，如何三大框架纵横的天下，感觉太投入和依赖框架，对于原生JS，似乎被遗忘了。很多js的基础，只能说出是什么，至于怎么用，用在哪里，用它的好处以及延伸？只能说出个大概，经常看到有人说，学习前端，不要太过依赖框架，好的程序员，一定对原生了解的透彻。务实基础，才是最重要的的，在此，勉励自己！！！</p>
+              <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>关于这些天的面试，做了一个总结。感叹一下，感觉前端工作出身平凡好难找5<del>5</del>5，市面上很多公司最低门槛都是两三年经验起步，还是回到那句话，<strong>不给机会，哪来的经验。。。</strong>像我们这种转型自学的散修，最怕没有秘籍和修炼路线，是最难搞的。这些天的面试，经常会被问到JS中原生的一些基础的东西，关于原型链、数组去重、this指向、闭包等等，这也也是大多数前端面试被经常提及的，如何三大框架纵横的天下，感觉太投入和依赖框架，对于原生JS，似乎被遗忘了。很多js的基础，只能说出是什么，至于怎么用，用在哪里，用它的好处以及延伸？只能说出个大概，经常看到有人说，学习前端，不要太过依赖框架，好的程序员，一定对原生了解的透彻。务实基础，才是最重要的的，在此，勉励自己！！！</p>
 <p>参加了一个公司的线上笔试，遇到一些很有意思的题，也有一些坑（全踩），在此结合知识点记录下来</p>
 <h3 id="一、什么是JS原型-解释原型，就会涉及到构造函数和实例对象"><a href="#一、什么是JS原型-解释原型，就会涉及到构造函数和实例对象" class="headerlink" title="一、什么是JS原型? 解释原型，就会涉及到构造函数和实例对象"></a>一、什么是JS原型? 解释原型，就会涉及到构造函数和实例对象</h3><p><strong>·构造函数</strong> ：用function声明的就是函数，任何函数都可以作为构造函数。主要从功能和用法上区分普通函数和构造函数。直接调用则是一个普通函数，对象调用，则是一个方法（方法也是函数），构造函数规范定义时首字母大写，且一般配合关键字new调用来创建初始化对象。</p>
 <p><strong>·原型对象</strong> ：每个构造函数在创建时，系统就会在内存中关联创建一个空对象，这就是原型对象。构造函数通过属性<code>prototype</code>指向原型对象，原型对象通过属性<code>constructor</code>指向这个构造函数</p>
